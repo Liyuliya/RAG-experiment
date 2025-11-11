@@ -9,18 +9,17 @@ This project compares four retrieval architectures on 1,000 **Natural Questions*
 It quantifies generation failures even when relevant evidence is retrieved — **61.3% of retrieved cases still fail**.
 
 Retrievers evaluated:
-- **BGE-large (dense)**
-- **Contriever (dense)**
-- **Hybrid (BM25 + BGE reranker)**
-- **Self-RAG–inspired heuristic filter** (no LLM judge)
+- BGE-large (dense)
+- Contriever (dense)
+- Hybrid (BM25 + BGE reranker)
+- Reflective-Contriever (Self-RAG–inspired heuristic filter)
 
 
 
 ## Setup
 
-
-git clone https://github.com/<yourusername>/rag-experiments.git
-cd rag-experiments
+git clone https://github.com/Liyuliya/RAG-experiment.git
+cd RAG-experiment
 
 Python 3.10+ recommended (tested on 3.10.13)
 
