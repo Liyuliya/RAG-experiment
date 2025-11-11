@@ -1,12 +1,7 @@
 from pathlib import Path
 import pickle
 
-print("-"*70)
-print("FULL BENCHMARK: 1000 QUERIES")
-print("-"*70)
 
-# 
-print("\n🔍 Checking available retrieval systems...")
 
 classes_to_find = {
     'SystemA': ['SystemA_Contriever', 'SystemA_DenseContriever', 'DenseContriever'],
@@ -81,12 +76,6 @@ TEST_N = 1000
 test_queries = queries[:TEST_N]
 
 print(f"\nRunning: {len(test_queries)} queries")
-print(f"Corpus coverage: ~40% (from verification)")
-print(f"Expected Recall@20: 10-20%")
-print(f"Expected time: ~2 hours")
-print(f"Expected cost: ~$0.50")
-print("="*70)
-
 
 systems = {
     "Dense (Contriever)": found_classes['SystemA'](),
@@ -117,9 +106,8 @@ runner = ExperimentRunner(
 
 summaries = {}
 for name, system in systems.items():
-    print(f"\n{'='*70}")
     print(name.upper())
-    print('='*70)
+  
     results = runner.run_system(system, test_queries, corpus)
     summaries[name] = runner.aggregate_results(results)
 
