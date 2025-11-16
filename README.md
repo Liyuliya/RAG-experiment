@@ -8,10 +8,6 @@ answer appears in retrieved passages.
 minimal gains. The bottleneck is generation: how models interpret and use 
 evidence, not how they find it.
 
-## Overview
-This repository contains code and experiments from the Medium article 
-[The 61% Problem: Why RAG Fails Even When It Works]
-
 **Experimental Setup:**
 - **Dataset:** 1,000 Natural Questions  
 - **Corpus:** 100k Wikipedia passages (2018)
@@ -94,21 +90,8 @@ See `src/data_loader.py` for expected format.
 **Hardware:** 8GB+ RAM, GPU optional
 
 
-## Related Work
-- 📝 [Medium Article](link-here) - Full analysis and discussion
-- 📊 Part 2: Inside the 206 Failures *(coming soon)*
-
-
 
 ## License
 MIT License - see [LICENSE](LICENSE) file for details.
 
 
-
-## Contributing
-Found an issue or want to improve the code? Pull requests welcome!
-
-For questions about the methodology, see the [Medium article](link-here) 
-or open an issue.
-
-**⭐ If you find this work useful, please consider starring the repository!**
